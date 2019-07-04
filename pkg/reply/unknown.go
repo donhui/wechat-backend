@@ -27,7 +27,7 @@ func (u *UnknownAutoReply) Handle() (string, error) {
 	from := u.Request.ToUserName
 	to := u.Request.FromUserName
 	data, err := makeTextResponseBody(from, to, `
-	我貌似没有明白你的问题，请回复“聊天室”问问其他人吧。
+	我貌似没有明白你的问题，请回复“微信群”问问其他人吧。
 	`)
 	return string(data), err
 }
